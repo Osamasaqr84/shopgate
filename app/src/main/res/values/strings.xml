@@ -1,76 +1,189 @@
 <resources>
-    <string name="app_name">shopgate</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="searchabout">ابحث بالمنتجات</string>
-    <string name="choice_depart">أختر حسب القسم</string>
-    <string name="famous_product">أشهر المنتجات</string>
-    <string name="diffs_product">منتجات منوعة</string>
-    <string name="addtocart">اضافة الي العربة</string>
-    <string name="more">المزيد</string>
+    <string name="google_maps_key">AIzaSyD8z2lWzm896P2g8VhaBfrVam0JL1BaiW0</string>
     <string name="more_sale">الأكثر مبيعا في العناية بالشعر</string>
-    <string name="cart">سلة التسوق</string>
-    <string name="product_des">وصف المنتج</string>
-    <string name="choice_size">اختر الحجم</string>
-    <string name="coin"> ر.ع </string>
-    <string name="remendier">  متوفر  </string>
-    <string name="num"> قطع </string>
-    <string name="realcoin">ريال</string>
-    <string name="rates">تعليقات / التقييمات</string>
-    <string name="degree_rate">معدل التقدير</string>
-    <string name="rate_now">يمكنك التقييم الان</string>
-    <string name="write_comment">كتابة تعليق</string>
-    <string name="user_rates">تقييمات المستخدم</string>
-    <string name="product_rates">تقييمات المنتج</string>
-    <string name="notfound">لا يوجد</string>
-    <string name="main">الرئيسية</string>
-    <string name="my_order">طلباتي</string>
-    <string name="offers">عروض</string>
-    <string name="day_offers">عروض اليوم </string>
-    <string name="notifications">اشعارات</string>
-    <string name="charge_ready">جاهزة للشحن</string>
-    <string name="under_delivery">قيد التوصيل</string>
-    <string name="deliveried">تم استلامها</string>
-    <string name="order_date">   تاريخ الطلب : </string>
-    <string name="order_num">  رقم الطلب : </string>
-    <string name="total">  المجموع :  </string>
-    <string name="order_details">تفاصيل الطلب</string>
-    <string name="product_num">  عدد المنتجات : </string>
-    <string name="myorders">طلباتي</string>
-    <string name="payment_way">طريقة الدفع :  </string>
-    <string name="dayoffer">أقوي عروض اليوم</string>
-    <string name="rate_product">تقييم المنتج</string>
-    <string name="products_orders"> منتجات الطلبية رقم :  </string>
-    <string name="addtocart2">اضف للسلة</string>
-    <string name="error_tryagani">خطأ,حاول مرة اخري</string>
-    <string name="loginfirst">يجب تسجيل الدخول اولا</string>
-    <string name="sure_order">تأكيد الطلب </string>
-    <string name="favorites_products">المنتجات المفضلة</string>
-    <string name="deletefromfavsucces">تم الحذف من المفضلة</string>
-    <string name="favnotfound">لا يوجد منتجات مفضلة اليك</string>
-    <string name="productsof">  منتجات   </string>
-    <string name="product_details">تفاصيل المنتج</string>
-    <string name="sendrate">ارسل</string>
-    <string name="writecomment">اكتب تقييمك</string>
-    <string name="choice_payment_way">اختر طريقة الدفع</string>
-    <string name="aleady_exists">المنتج موجود من قبل</string>
-    <string name="addtocartsuccess">تم الاضافة للسلة بنجاح</string>
-    <string name="noitemsincart">لا يوجد منتجات بالسلة</string>
-    <string name="addratesuccess">تم اضافة التقييم بنجاح</string>
-    <string name="addcomment">يجب ادخال التقييم</string>
-    <string name="wait">انتظر...</string>
-    <string name="rate">تقييم </string>
-    <string name="from">من</string>
-    <string name="client">عميل</string>
-    <string name="norates">لا يوجد تقييمات</string>
+
+
+    <string name="app_name">shopgate</string>
+    <string name="action_settings">Settings</string>
+    <string name="addcomment">you must add rate!!</string>
+    <string name="adddetailsaddress">Add Address details</string>
+    <string name="addratesuccess">rate add successfully</string>
+    <string name="addressdetails">address details</string>
+    <string name="addtocart">Add To Cart</string>
+    <string name="addtocart2">Add To Cart</string>
+    <string name="addtocartsuccess">Add to Cart successfully</string>
+    <string name="aleady_exists">Already exists in cart</string>
+    <string name="cannot_fetch_address">"enable to find address "</string>
+    <string name="cart">Your Cart</string>
+    <string name="cash">cash</string>
+    <string name="charge_ready">ready to charge</string>
+    <string name="charge_rules">charge rules</string>
+    <string name="choice_depart">Choice Department</string>
+    <string name="choice_location">Choice delivery place</string>
+    <string name="choice_payment_way">Choice Payment Way</string>
+    <string name="choice_size">Choice Size</string>
+    <string name="client">Client</string>
+    <string name="coin">R.OM</string>
+    <string name="day_offers">Day offers</string>
+    <string name="dayoffer">Day offers</string>
+    <string name="degree_rate">Rate Ratio</string>
+    <string name="deletefromfavsucces">delete from favorite</string>
+    <string name="deliveried">Delivered</string>
+    <string name="diffs_product">Different Products</string>
+    <string name="error_in_data">"error in data "</string>
+    <string name="error_tryagani">error,try again</string>
+    <string name="famous_product">famous products</string>
+    <string name="favnotfound">no favorite products found</string>
+    <string name="favorites_products">Favorites Products</string>
+    <string name="finish_order">Finish Order</string>
+    <string name="free_charge">Free Charge</string>
+    <string name="from">From</string>
+    <string name="gotoorders">Go to Orders</string>
+    <string name="login">Login</string>
+    <string name="loginfirst">You Must Login First</string>
+    <string name="loout">"Logout "</string>
+    <string name="main">MainPage</string>
+    <string name="more">more</string>
+    <string name="my_order">My Orders</string>
+    <string name="myorders">My Orders</string>
+    <string name="newuser">Register New User</string>
+    <string name="noaddress">No Address Found</string>
+    <string name="noitemsincart">No Products in Your Cart</string>
+    <string name="norates">No Rates Found</string>
+    <string name="nosearchname">Add Product Name</string>
+    <string name="notfound">"No Found "</string>
+    <string name="nothaveaccount">You have not acount? Register Now</string>
+    <string name="notifications">Notification</string>
+    <string name="num">Plot</string>
+    <string name="offers">Offers</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_num">Order Date :</string>
+    <string name="password">Password</string>
+    <string name="payment_way">"Payment : "</string>
+    <string name="payoptions">Payment Options</string>
+    <string name="paypal">Payapal</string>
+    <string name="phone">Phone</string>
+    <string name="product_des">Description</string>
+    <string name="product_details">Product Details</string>
+    <string name="product_num">"Products : "</string>
+    <string name="product_rates">Products Rate</string>
+    <string name="products_orders">"Products of Order : "</string>
+    <string name="productsof">Products</string>
+    <string name="rate">"rate "</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="rate_product">Rate Product</string>
+    <string name="rates">Rates</string>
+    <string name="realcoin">rial</string>
+    <string name="remendier">available</string>
+    <string name="repassword">Re-Password</string>
+    <string name="requestnotallow">You Can not request more than available quentity</string>
+    <string name="search">search about delivery place</string>
+    <string name="searchabout">search by products</string>
+    <string name="send">confirm</string>
+    <string name="sendrate">send</string>
+    <string name="sure_order">confirm order</string>
+    <string name="title">Login</string>
+    <string name="total">Tatal :</string>
+    <string name="under_delivery">deliveried</string>
+    <string name="user_rates">User rates</string>
+    <string name="username">user name</string>
+    <string name="wait">Waiting...</string>
+    <string name="write_comment">"write a coment "</string>
+    <string name="writecomment">write tou comment</string>
+    <string name="cuurency">cuurency</string>
 
     <string-array name="filters">
-        <item>الاكثر تقييما</item>
-        <item>الاقل سعرا</item>
-        <item>الاكثر سعرا</item>
+        <item>More Rate</item>
+        <item>Less Price</item>
+        <item>More Price</item>
     </string-array>
+    <string name="complete">"complete your data "</string>
+    <string name="passworsnotmatch">passwords not equel</string>
+    <string name="register">register</string>
+    <string name="registersuccess">register successfully</string>
+    <string name="hello">"Hello "</string>
+    <string name="disscount">sale</string>
+    <string name="favorite">Favorite</string>
+    <string name="orderfound">No Orders Found for you</string>
+    <string name="youlogout">You Are Logout</string>
+    <string name="product_name">Product name</string>
+
+
+    <string name="popular_products">Popular products</string>
+    <string name="error">Error</string>
+    <string name="frame_load_failed">Failed to load, Please try again later or contact us if this error continue</string>
+    <string name="tab_to_retry">Tab to try again</string>
+    <string name="press_back">Press Back again to Exit</string>
+    <string name="close">Close</string>
+    <string name="glasses">Glasses</string>
+    <string name="homegard"><![CDATA[Home & Gardens]]></string>
+    <string name="electronics">Electronics</string>
+    <string name="mobiles">Mobiles</string>
+    <string name="cloth">Cloth</string>
+    <string name="currency">pound</string>
+    <string name="contact">Contact us</string>
+    <string name="sendreq"> send your message </string>
+    <string name="more_sales">more sales</string>
+    <string name="more_rates">  Last Products </string>
+    <string name="suggestedproduct">Recommended Products</string>
+    <string name="aboutus"> Contact Us</string>
+    <string name="conditions">Terms and Conditions </string>
+    <string name="chat">private messages </string>
+    <string name="empty">write your message </string>
+    <string name="now">now</string>
+
+
+    <string name="condition" translatable="false">
+نتمنى من جميع زبائننا الكرام الاطلاع على هذه الاتفاقية لتوضيح طرق الدفع والشحن ونحوها وهي كالآتي:
+
+
+
+ليس بالضروري في حالة وجود عبارة "متوفر في المخزون" في المتجر أن يكون متوفرا، ولكن في حالة عدم توفره في المخازن سيقوم مسؤول المبيعات بطلب المنتج مع إعلام الزبون بمدة التوصيل التقريبية.
+
+في حالة عدم تمكن البوابة من طلب المنتج لكونه غير متوفر في المواقع العالمية أو غير متوفر من الشركة المصنعة للمنتج، فسيتم إلغاء الطلب واسترجاع المبلغ خلال 7 أيام بعد إشعار الزبون بذلك.
+
+تحاول بوابة التسوق توفير كافة المنتجات وطلبها قدر المستطاع في أقرب وقت وبأقل تكلفة.
+
+سيتم شحن المنتجات عبر الطرق التالية: (أحد مندوبي بوابة التسوق، بريد عمان، النقل الوطني، سيارة الأجرة)
+
+من يرغب في إيداع المبلغ مباشرة على حساب متجر بوابة التسوق، يعلمنا بعدها بتفاصيل الإيداع ورقم الطلب مع صورة للإيصال لإثبات الإيداع، وبعد التحقق من وصول المبلغ سيتم البدء في عملية شحن المنتج.
+
+في حالة توفر المنتج في متجر بوابة التسوق سيتم الشحن خلال 3-4 أيام عمل، وذلك حسب عنوان الشحن.
+
+في حالة عدم توفر المنتج فإننا سنقوم مباشرة بعملية طلب للمنتج من أحد المواقع العالمية، ويتوقع وصوله خلال 7-14 يوما.
+
+جميع العملات المسجلة هي بالدولار الأمريكي، وتوجد خيار تغيير العملة لعدد من الدول وأهما سلطنة عمان، مع العلم أن الأسعار تقريبية لأن أصل المنتجات مسجلة بالدولار الأمريكي، لذلك قد تجد فرق بعد طلبك وخصم المبلغ بفرق بسيط جدا وذلك حسب سعر الدولار.
+
+يرجى كتابة بريد إلكتروني صحيح ورقم هاتف وعنوان صحيح وذلك لسهولة التواصل معكم.
+
+في حال رغبتكم في الحصول على أي منتج غير مذكور في "بوابة التسوق" بإمانكم التواصل مع فريق المبيعات في المتجر لتوفيره لكم بأفضل الأسعار، سيتم إشعاركم بالتكلفة الكاملة مع الشحن قبل إعتماد الطلب.
+
+متجر "بوابة التسوق" غير مسؤول عن أي منتج معروض للبيع هنا، وذلك لأن المنتجات هي من إنتاج شركات عالمية ومتخصصة في هذا المجال، وكل ما ذكر في وصف المنتج في هذه البوابة فإنه حسب كلام الشركات المصنعة وننقله لكم تيسيرا للبحث، وعليه فإننا ننصح كل من يود شراء أي منتج عبر هذه البوابة أن يبحث عنها بنفسه ويقرأ عنها بتفصيل أكثر من مواقع البحث المشهورة ومن موقع الشركة المصنعة.
+
+أغلب منتجاتنا المعروضة هنا نقوم باستيرادها من أمريكا وبريطانيا وبقية الدول، وذلك حسب المنتج والشركة المصنعة، وأيضا نقوم بالشراء من المواقع العالمية المشهورة مثل أمازون وايباي وغيرها.
+
+الأسعار المعروضة شاملة لتكاليف الشحن والجمارك من الدول المستوردة إلى سلطنة عمان، أما الشحن أي توصيل المنتج في أنحاء السلطنة يتم إضافة 5 دولار للتوصيل سواء عن طريق إحدى شركات الشحن أو النقل الوطني أو بريد عمان أو التسليم المباشر عن طريق أحد مندوبي البوابة أو سيارات الأجرة إن لزم الأمر.
+
+في حالة عدم تمكن التوصل لطريقة شحن لبعض المناطق في السلطنة أو أن يزيد شعر الشحن إليها فسيتم إستشارة الزبون في حالة أنه يقوم بدقع تكاليف الشحن أو إلغاء الطلب واسترجاع المبلغ.
+
+تتكفل بوابة التسوق بسعر الشحن داخل السلطنة من ضمن 5 دولار التي تم دفعها أثناء الطلب، وفي حالة زيادة السعر فإن البوابة بشرط أن لا يزيد عن 12 دولار، فإن زاد عن ذلك يتحمل الزبون بقية التكلفة أو يتم إلغاء الطلب.
+
+تسرنا خدمتكم على مدار أيام الأسبوع على الرقم التالي: 98075581 968+ أو 94189519 968+
+
+أو التواصل على البريد الإلكتروني: info@shopgate.om
+    </string>
+    <string name="bank">Bank Translation Info </string>
+    <string name="bankname">Bank Name :  </string>
+    <string name="benfitname">Beneficiary Name : </string>
+    <string name="accountnum"> Account num : </string>
+    <string name="ok"> Ok </string>
+    <string name="notesvalue">order not confirm untile translate the cost to bank account and send transformation photo to email or whatsapp</string>
+
+    <string name="notes">*notes</string>
 </resources>
