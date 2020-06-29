@@ -23,8 +23,13 @@
     <string name="cash">cash</string>
     <string name="charge_ready">ready to charge</string>
     <string name="charge_rules">charge rules</string>
-    <string name="choice_depart">Choice Department</string>
+    <string name="choice_depart">select Department</string>
     <string name="choice_location">Choice delivery place</string>
+    <string name="statues1">Under review</string>
+    <string name="statues2">Shipped</string>
+    <string name="statues3">Charging</string>
+    <string name="statues4">Delivered</string>
+
     <string name="choice_payment_way">Choice Payment Way</string>
     <string name="choice_size">Choice Size</string>
     <string name="client">Client</string>
@@ -98,11 +103,6 @@
     <string name="writecomment">write tou comment</string>
     <string name="cuurency">cuurency</string>
 
-    <string-array name="filters">
-        <item>More Rate</item>
-        <item>Less Price</item>
-        <item>More Price</item>
-    </string-array>
     <string name="complete">"complete your data "</string>
     <string name="passworsnotmatch">passwords not equel</string>
     <string name="register">register</string>
@@ -113,9 +113,9 @@
     <string name="orderfound">No Orders Found for you</string>
     <string name="youlogout">You Are Logout</string>
     <string name="product_name">Product name</string>
-
-
     <string name="popular_products">Popular products</string>
+
+
     <string name="error">Error</string>
     <string name="frame_load_failed">Failed to load, Please try again later or contact us if this error continue</string>
     <string name="tab_to_retry">Tab to try again</string>
@@ -130,15 +130,13 @@
     <string name="contact">Contact us</string>
     <string name="sendreq"> send your message </string>
     <string name="more_sales">more sales</string>
-    <string name="more_rates">  Last Products </string>
+    <string name="more_rates">  Latest Products </string>
     <string name="suggestedproduct">Recommended Products</string>
     <string name="aboutus"> Contact Us</string>
     <string name="conditions">Terms and Conditions </string>
     <string name="chat">private messages </string>
     <string name="empty">write your message </string>
     <string name="now">now</string>
-
-
     <string name="condition" translatable="false">
 نتمنى من جميع زبائننا الكرام الاطلاع على هذه الاتفاقية لتوضيح طرق الدفع والشحن ونحوها وهي كالآتي:
 
@@ -178,12 +176,36 @@
 
 أو التواصل على البريد الإلكتروني: info@shopgate.om
     </string>
+
+
     <string name="bank">Bank Translation Info </string>
     <string name="bankname">Bank Name :  </string>
     <string name="benfitname">Beneficiary Name : </string>
     <string name="accountnum"> Account num : </string>
     <string name="ok"> Ok </string>
     <string name="notesvalue">order not confirm untile translate the cost to bank account and send transformation photo to email or whatsapp</string>
-
     <string name="notes">*notes</string>
+
+    <string name="change_country">change country </string>
+    <string name="charge"> Delivery cost :  </string>
+    <string name="cancel">cancel</string>
+    <string name="alltotal">Total :</string>
+    <string name="no">لا</string>
+    <string name="notexists">
+This number is not registered on your phone must be registered first to the possibility of chatting on WhatsApp</string>
+    <string name="mail">E-mail</string>
+    <string name="success">thanks..success operation</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_one">Select One Name :-</string>
+    <string name="your_selected">Your Selected Item is</string>
+    <string name="delivery_time">"Expectd Delivery in 4-12 days "</string>
+    <string name="username_or_password">UserName or Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="filters">
+        <item>More Rate</item>
+        <item>Less Price</item>
+        <item>More Price</item>
+    </string-array>
+
 </resources>

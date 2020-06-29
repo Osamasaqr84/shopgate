@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".presentationn.screens.feature.home.productdetailsfragment.DescriptionFragment">
+
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lineSpacingExtra="5dp"
+        tools:text="hello_blank_fragment" />
+
+</FrameLayout>

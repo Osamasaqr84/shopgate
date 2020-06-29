@@ -11,6 +11,8 @@
         android:layout_width="70dp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cach"
         app:layout_constraintStart_toStartOf="parent"
         app:civ_border_color="#FFFFFF"
         app:civ_border_width="1dp" />
