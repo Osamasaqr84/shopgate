@@ -103,7 +103,7 @@
     <string name="writecomment">write tou comment</string>
     <string name="cuurency">cuurency</string>
 
-    <string name="complete">"complete your data "</string>
+    <string name="complete"> complete your data </string>
     <string name="passworsnotmatch">passwords not equel</string>
     <string name="register">register</string>
     <string name="registersuccess">register successfully</string>
@@ -196,10 +196,15 @@ This number is not registered on your phone must be registered first to the poss
     <string name="mail">E-mail</string>
     <string name="success">thanks..success operation</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="select_one">Select One Name :-</string>
+    <string name="select_one">please , Select currency :-</string>
     <string name="your_selected">Your Selected Item is</string>
-    <string name="delivery_time">"Expectd Delivery in 4-12 days "</string>
+    <string name="delivery_time">"Expectd Delivery in 4–12 days "</string>
     <string name="username_or_password">UserName or Password</string>
+    <string name="forget_password">Forggeten PAssword</string>
+    <string name="add_recovery_mail">"Add your mail "</string>
+    <string name="welcome_to_shopgate">"Welcome To Shopgate : "</string>
+    <string name="username_or_email">username or email</string>
+    <string name="share_app">Share app</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string-array name="filters">

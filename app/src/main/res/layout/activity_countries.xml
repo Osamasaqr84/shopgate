@@ -16,6 +16,17 @@
         app:layout_constraintGuide_percent="0.05"
         />
 
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_shopgate"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/guid"
+        />
+
     <ImageView
         android:id="@+id/img"
         android:layout_width="0dp"
@@ -25,14 +36,14 @@
         app:layout_constraintTop_toBottomOf="@+id/guid"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHeight_percent="0.35"
         />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="الرجاء اختيار الدولة "
+        android:text="الرجاء اختيار عنوان الشحن (الدولة) "
         android:gravity="center"
         android:textSize="24dp"
         android:textColor="@color/colorPrimary"
@@ -43,7 +54,7 @@
         android:id="@+id/text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="choice country,please "
+        android:text="choose country,please "
         android:gravity="center"
         android:textSize="24dp"
         android:textColor="@color/colorPrimary"

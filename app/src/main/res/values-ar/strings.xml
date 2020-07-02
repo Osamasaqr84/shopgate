@@ -135,7 +135,7 @@
     <string name="currency">pound</string>
     <string name="more_sales">الاكثر مبيعا</string>
     <string name="more_rates"> أحدث المنتجات </string>
-    <string name="suggestedproduct">منتجات يوصي بها</string>
+    <string name="suggestedproduct">منتجات نوصي بها</string>
     <string name="aboutus">اتصل بنا</string>
     <string name="conditions">الشروط والاحكام</string>
     <string name="chat">الرسائل الخاصة </string>
@@ -155,8 +155,13 @@
     <string name="no">لا</string>
     <string name="mail">البريد الالكتروني</string>
     <string name="success">شكرا .. تمت العملية بنجاح</string>
-    <string name="select_one">يجب اختيار احد الخيارات</string>
-    <string name="your_selected">"اختيارك : "</string>
-    <string name="delivery_time">"مدة الشحن التقريبية  4-12 يوم "</string>
+    <string name="select_one">يجب اختيار احد العملات : </string>
+    <string name="your_selected">"قمت باختيار  : "</string>
+    <string name="delivery_time">"مدة الشحن التقريبية  4–12 يوم "</string>
+    <string name="share_app">مشاركة التطبيق</string>
+ <string name="username_or_email">اسم المستخدم او الايميل</string>
+ <string name="welcome_to_shopgate">مرحبا بكم في بوابة التسوق</string>
+ <string name="add_recovery_mail">اضف ايميل الاسترجاع :</string>
+ <string name="forget_password">نسيت كلمة السر؟</string>
 
 </resources>
