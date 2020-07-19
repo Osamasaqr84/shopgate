@@ -25,7 +25,6 @@
         android:gravity="center"
         app:layout_constraintStart_toStartOf="@+id/img"
         app:layout_constraintEnd_toEndOf="@+id/img"
-        app:layout_goneMarginEnd="15dp"
         android:lineSpacingExtra="10dp"
         android:text="shopgate \n بوابة التسوق "
         android:textColor="@color/colorPrimary"
@@ -42,7 +41,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.3"
-        app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.5" />

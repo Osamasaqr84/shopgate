@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/item_img"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
         android:src="@drawable/hair_dryer"
-        android:layout_marginStart="20dp"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:text="أجهزة العناية بالشعر "
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:gravity="center_vertical|start"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/item_img"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/item_img"
         app:layout_constraintTop_toTopOf="@+id/item_img"
-        android:textColor="@color/black"
-        android:layout_marginStart="9dp"
-        app:layout_constraintBottom_toBottomOf="@+id/item_img"
-        />
+        tools:text="أجهزة العناية بالشعر " />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="0.7dp"
         android:background="@color/light_gray"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 </android.support.constraint.ConstraintLayout>

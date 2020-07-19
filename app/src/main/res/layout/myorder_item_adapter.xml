@@ -294,7 +294,7 @@
         android:layout_marginTop="8dp"
         android:text="342"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@id/date"
+        app:layout_constraintStart_toEndOf="@id/number"
         app:layout_constraintTop_toBottomOf="@+id/date" />
 
 

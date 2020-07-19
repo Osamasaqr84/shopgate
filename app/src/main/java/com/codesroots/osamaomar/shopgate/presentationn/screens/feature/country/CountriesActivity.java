@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.codesroots.osamaomar.shopgate.R;
 import com.codesroots.osamaomar.shopgate.entities.Countries;
 import com.codesroots.osamaomar.shopgate.helper.PreferenceHelper;
@@ -20,9 +21,9 @@ import java.util.List;
 public class CountriesActivity extends AppCompatActivity {
 
     CountryViewModel mViewModel;
-    List<Countries.DataBean>countries = new ArrayList<>();
-    TextView country,done;
-    ImageView next,prev;
+    List<Countries.DataBean> countries = new ArrayList<>();
+    TextView country, done;
+    ImageView next, prev;
     private int index = 0;
 
     @Override
@@ -34,49 +35,64 @@ public class CountriesActivity extends AppCompatActivity {
         prev = findViewById(R.id.prev);
         done = findViewById(R.id.done);
 
-        mViewModel = ViewModelProviders.of(this,getViewModelFactory()).get(CountryViewModel.class);
+        mViewModel = ViewModelProviders.of(this, getViewModelFactory()).get(CountryViewModel.class);
+        country.setText(PreferenceHelper.getCountry());
 
-        mViewModel.countriesMutableLiveData.observe(this,data ->{
-            if (data.getData()!=null)
-            countries=data.getData();
-            if (countries.size()>0) {
+        mViewModel.countriesMutableLiveData.observe(this, data -> {
+            if (data.getData() != null)
+                countries = data.getData();
+            if (countries.size() > 0) {
                 next.setEnabled(true);
                 prev.setEnabled(true);
+                if (PreferenceHelper.getCountry().equals(""))
                 country.setText(countries.get(index).getName());
             }
         });
 
         prev.setOnClickListener(v -> {
-            index-=1;
-            if (index>=0)
+            index -= 1;
+            if (index >= 0)
                 country.setText(countries.get(index).getName());
             else
-                index=0;
+                index = 0;
         });
 
 
         done.setOnClickListener(v -> {
-            PreferenceHelper.setCountryId(countries.get(index).getId());
-            if (ResourceUtil.getCurrentLanguage(CountriesActivity.this).matches("ar"))
-                    ResourceUtil.changeLang("ar", CountriesActivity.this);
-                else
-                    ResourceUtil.changeLang("en", CountriesActivity.this);
+                PreferenceHelper.setCountryId(countries.get(index).getId());
+                PreferenceHelper.setCountryNamr(countries.get(index).getName());
 
-                Intent mainIntent = new Intent(CountriesActivity.this, MainActivity.class);
-                startActivity(mainIntent);
-                finish();
+            if (ResourceUtil.getCurrentLanguage(CountriesActivity.this).matches("ar"))
+                ResourceUtil.changeLang("ar", CountriesActivity.this);
+            else
+                ResourceUtil.changeLang("en", CountriesActivity.this);
+
+            mViewModel.getSettingData();
+
+        });
+
+        mViewModel.storeSettingMutableLiveData.observe(this, storeSetting ->
+        {
+            if (storeSetting.getData() != null) {
+                PreferenceHelper.setInOman(storeSetting.getData().get(0).getInoman());
+                PreferenceHelper.setOutOman(storeSetting.getData().get(0).getOutoman());
+                PreferenceHelper.setMinChipping(storeSetting.getData().get(0).getShippingPrice());
+            }
+            Intent mainIntent = new Intent(CountriesActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+            finish();
         });
 
         next.setOnClickListener(v -> {
-            index+=1;
-            if (index<=countries.size()-1)
+            index += 1;
+            if (index <= countries.size() - 1)
                 country.setText(countries.get(index).getName());
             else
-                index=countries.size()-1;
+                index = countries.size() - 1;
         });
 
-        mViewModel.throwableMutableLiveData.observe(this,throwable ->
-                Toast.makeText(CountriesActivity.this,R.string.error,Toast.LENGTH_SHORT).show());
+        mViewModel.throwableMutableLiveData.observe(this, throwable ->
+                Toast.makeText(CountriesActivity.this, R.string.error, Toast.LENGTH_SHORT).show());
     }
 
     private CountryModelFactory getViewModelFactory() {

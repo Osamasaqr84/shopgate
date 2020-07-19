@@ -9,6 +9,7 @@ import android.util.Log;
 import com.codesroots.osamaomar.shopgate.domain.ServerGateway;
 import com.codesroots.osamaomar.shopgate.entities.Countries;
 import com.codesroots.osamaomar.shopgate.entities.MainView;
+import com.codesroots.osamaomar.shopgate.entities.StoreSetting;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -22,6 +23,7 @@ class CountryViewModel extends ViewModel {
     public MutableLiveData<Countries> countriesMutableLiveData = new MutableLiveData<>();
     public MutableLiveData<Throwable> throwableMutableLiveData = new MutableLiveData<>();
     private ServerGateway serverGateway;
+    public MutableLiveData<StoreSetting> storeSettingMutableLiveData = new MutableLiveData<>();
 
      CountryViewModel(ServerGateway serverGateway1) {
         serverGateway = serverGateway1;
@@ -32,6 +34,24 @@ class CountryViewModel extends ViewModel {
         getObservable().subscribeWith(getObserver());
     }
 
+
+
+    @SuppressLint("CheckResult")
+    public void getSettingData() {
+                serverGateway.getStorSetting()
+                        .subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .subscribe(this::postDataResponse,
+                                this::postError);
+    }
+
+    private void postDataResponse(StoreSetting storeSetting) {
+        storeSettingMutableLiveData.postValue(storeSetting);
+    }
+
+    private void postError(Throwable throwable) {
+        throwableMutableLiveData.postValue(throwable);
+    }
 
     @SuppressLint("CheckResult")
     private Observable<Countries> getObservable() {
